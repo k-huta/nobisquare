@@ -1,0 +1,46 @@
+Content-type: text/html
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>$title$</title>
+	<link rel="stylesheet" href="view/default.css" />
+	<meta name="viewport" content="width=device-width" />
+	<script src="view/main.js"></script>
+</head>
+<body>
+   <header id="page-header">
+     <hgroup>
+       <h1><a href="/">のびのびブログ</a></h1>
+       <h2>のびのびしてますか?</h2>
+     </hgroup>
+     <nav><ul>
+       <li><a href="/?page=top">nobisquareとは</a></li>
+       <li><a href="/?post">日記</a></li>
+       <li><a href="https://github.com/k-huta/nobisquare_contents">リポジトリ</a></li>
+     </ul></nav>
+   </header>
+   <article id="article">
+      <header id="article-header">
+      <nav>
+  $nav$<br />created: $created_time$<br />views: $views$
+      </nav>
+      </header>
+      <artile id="article-body">
+	$body$
+      </article>
+      <footer id="artcle-footer">
+        <nav>
+    created: $created_time$&nbsp;(last modified: $modified_time$)<br />views:&nbsp; keywords: $Keywords$
+        </nav>
+      </footer>
+    </article>
+    <aside id="widgets">
+      <aside id="last-articles"></aside>
+      <footer id="page-footer">
+      <p>Copyright: $Copyright$</p>
+      </footer>
+    </aside>
+</body>
+</html>
